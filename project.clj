@@ -37,16 +37,16 @@
               :builds [{:id "dev"
                         :source-paths ["src/cljs"]
                         :compiler {
-                                   :output-to "resources/public/js/om_chat.js"
-                                   :output-dir "resources/public/js/out"
+                                   :output-to "resources/public/js/gen/om_chat.js"
+                                   :output-dir "resources/public/js/gen"
                                    :optimizations :none
                                    :source-map true
                                    :externs ["react/externs/react.js"]}}
                        {:id "release"
                         :source-paths ["src/cljs"]
                         :compiler {
-                                   :output-to "resources/public/js/om_chat.js"
-                                   :source-map "resources/public/js/om_chat.js.map"
+                                   :output-to "resources/public/js/gen/om_chat.js"
+                                   :source-map "resources/public/js/gen/om_chat.js.map"
                                    :optimizations :advanced
                                    :pretty-print false
                                    :output-wrapper false
